@@ -31,7 +31,7 @@ app.use(cookieParser());
 app.use("/api/auth", authRoutes);
 app.use("/api/request", requestRoutes);
 app.use("/api/edit", editRoutes);
-app.use("/api/test", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hi");
 });
 
